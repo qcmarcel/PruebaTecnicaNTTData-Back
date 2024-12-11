@@ -1,5 +1,13 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
+### Api v1
+GET http://localhost:8090/api/v1/
 
-###
+### Parameters
+@documentNumber=23445322
+@documentType=C
+
+### Find Customer By Query Params (id and type)
+GET http://localhost:8090/api/v1/customer?
+    id={{documentNumber}}&type={{documentType}}
+
+### Find Customer By Url Path Params /{documentType}/{documentNumber}
+GET http://localhost:8090/api/v1/customer/{{documentType}}/{{documentNumber}}

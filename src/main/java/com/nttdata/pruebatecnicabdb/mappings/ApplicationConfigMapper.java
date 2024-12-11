@@ -1,4 +1,4 @@
-package com.nttdata.pruebatecnicabdb.configurations;
+package com.nttdata.pruebatecnicabdb.mappings;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -11,5 +11,5 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties("application.config")
 public class ApplicationConfigMapper {
-    private String timezone;
+    public String TIMEZONE;
 }
