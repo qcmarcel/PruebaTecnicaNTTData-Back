@@ -12,4 +12,5 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties("application.config")
 public class ApplicationConfigMapper {
     public String TIMEZONE;
+    public String ALLOWED_ORIGIN;
 }
